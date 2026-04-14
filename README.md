@@ -9,7 +9,7 @@ Projet réalisé dans le cadre du **Master 1 BIDABI** — Université Sorbonne P
 
 ---
 
-## 📌 Description
+##  Description
 
 Ce projet implémente un pipeline modulaire de traduction automatique français → anglais,  
 en utilisant le modèle **HelsinkiNLP/opus-mt-fr-en** (HuggingFace).  
@@ -17,8 +17,7 @@ La qualité des traductions est évaluée automatiquement via la métrique **BLE
 
 ---
 
-## 🗂️ Structure du projet
-## 🗂️ Structure du projet
+##  Structure du projet
 
 - **src/**
   - **loaders/** — Chargement des données (CSV, JSON)
@@ -47,8 +46,9 @@ La qualité des traductions est évaluée automatiquement via la métrique **BLE
 - **tests/** — Tests unitaires
 - `.github/workflows/` — Pipeline CI/CD GitHub Actions
 
+---
 
-## Installation
+##  Installation
 
 ```bash
 # Créer et activer l'environnement virtuel
@@ -81,11 +81,11 @@ black --check .
 
 # Appliquer le formatage automatiquement
 black .
+```
 
+---
 
-
-
-## Fonctionnement du pipeline
+##  Fonctionnement du pipeline
 
 1. **Chargement** — Les données sont lues depuis `data/` (CSV ou JSON)
 2. **Traduction** — Le modèle HelsinkiNLP traduit les textes français en anglais
@@ -95,7 +95,7 @@ black .
 
 ---
 
-## Technologies utilisées
+##  Technologies utilisées
 
 - Python 3.10
 - HuggingFace Transformers
@@ -104,4 +104,3 @@ black .
 - black
 - Cookiecutter (template)
 - GitHub Actions (CI/CD)
-
