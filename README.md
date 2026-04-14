@@ -18,40 +18,37 @@ La qualité des traductions est évaluée automatiquement via la métrique **BLE
 ---
 
 ## 🗂️ Structure du projet
-ml_project/
-├── src/
-│   ├── loaders/           # Chargement des données (CSV, JSON)
-│   │   ├── base_loader.py
-│   │   ├── csv_loader.py
-│   │   ├── json_loader.py
-│   │   └── loader_factory.py
-│   ├── translators/       # Interface avec les modèles HuggingFace
-│   │   ├── base_translator.py
-│   │   └── translator.py
-│   ├── processors/        # Nettoyage et transformation des données
-│   │   ├── base_processor.py
-│   │   └── data_processor.py
-│   ├── evaluators/        # Calcul des métriques (BLEU)
-│   │   ├── base_evaluator.py
-│   │   └── evaluator.py
-│   ├── orchestrator/      # Coordination du pipeline
-│   │   ├── pipeline.py
-│   │   └── orchestrator.py
-│   ├── config.py          # Configuration générale
-│   ├── main.py            # Point d'entrée principal
-│   ├── main01.py
-│   └── main02.py
-├── data/                  # Fichiers d'entrée (sample.json, sample02.json)
-├── output/                # Résultats produits par le pipeline
-├── tests/                 # Tests unitaires (pytest)
-├── .github/workflows/     # Pipeline CI/CD GitHub Actions
-├── .gitignore
-├── pyproject.toml
-└── README.md
+## 🗂️ Structure du projet
 
----
+- **src/**
+  - **loaders/** — Chargement des données (CSV, JSON)
+    - `base_loader.py`
+    - `csv_loader.py`
+    - `json_loader.py`
+    - `loader_factory.py`
+  - **translators/** — Interface avec les modèles HuggingFace
+    - `base_translator.py`
+    - `translator.py`
+  - **processors/** — Nettoyage et transformation des données
+    - `base_processor.py`
+    - `data_processor.py`
+  - **evaluators/** — Calcul des métriques (BLEU)
+    - `base_evaluator.py`
+    - `evaluator.py`
+  - **orchestrator/** — Coordination du pipeline
+    - `pipeline.py`
+    - `orchestrator.py`
+  - `config.py` — Configuration générale
+  - `main.py` — Point d'entrée principal
+  - `main01.py`
+  - `main02.py`
+- **data/** — Fichiers d'entrée (sample.json, sample02.json)
+- **output/** — Résultats du pipeline
+- **tests/** — Tests unitaires
+- `.github/workflows/` — Pipeline CI/CD GitHub Actions
 
-## ⚙️ Installation
+
+## Installation
 
 ```bash
 # Créer et activer l'environnement virtuel
@@ -65,7 +62,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🚀 Lancer le pipeline
+##  Lancer le pipeline
 
 ```bash
 python src/main.py
@@ -73,7 +70,7 @@ python src/main.py
 
 ---
 
-## 🧪 Tests et qualité du code
+##  Tests et qualité du code
 
 ```bash
 # Lancer les tests unitaires
@@ -84,11 +81,11 @@ black --check .
 
 # Appliquer le formatage automatiquement
 black .
-```
 
----
 
-## 🔧 Fonctionnement du pipeline
+
+
+## Fonctionnement du pipeline
 
 1. **Chargement** — Les données sont lues depuis `data/` (CSV ou JSON)
 2. **Traduction** — Le modèle HelsinkiNLP traduit les textes français en anglais
@@ -98,7 +95,7 @@ black .
 
 ---
 
-## 📦 Technologies utilisées
+## Technologies utilisées
 
 - Python 3.10
 - HuggingFace Transformers
