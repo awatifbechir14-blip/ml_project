@@ -5,7 +5,7 @@
 ![Pytest](https://img.shields.io/badge/tested%20with-pytest-green)
 
 Projet réalisé dans le cadre du **Master 1 BIDABI** — Université Sorbonne Paris Nord  
-**Auteur** : Awatif Bechir
+**Auteur** : Awatif Bechir 
 
 ---
 
